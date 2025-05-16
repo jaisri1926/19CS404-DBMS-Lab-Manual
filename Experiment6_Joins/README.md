@@ -212,5 +212,6 @@ WHERE o.purch_amt<100;
 **Output:**
 ---
 
+
 ## RESULT
 Thus, the SQL queries to implement different types of joins have been executed successfully.
