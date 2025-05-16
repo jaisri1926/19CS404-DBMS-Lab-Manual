@@ -1,5 +1,5 @@
 # Experiment 1: Entity-Relationship (ER) Diagram
-
+## REG NO 212222060086
 ## 🎯 Objective:
 To understand and apply the concepts of ER modeling by creating an ER diagram for a real-world application.
 
@@ -45,28 +45,53 @@ Design a database for patient management, appointments, medical records, and bil
    - Why you chose the entities and relationships.
    - How you modeled prerequisites or billing.
 
-# ER Diagram Submission - Student Name
+# ER Diagram Submission - Jaisri J
 
 ## Scenario Chosen:
 University / Hospital (choose one)
 
 ## ER Diagram:
-![ER Diagram](er_diagram.png)
+![Screenshot (4)](https://github.com/user-attachments/assets/e38878cb-3120-417a-b347-2cb9e314475a)
+
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+Patient: Name, Age, Gender, Address, Mobile_no
+
+Doctor: Doc_Id, Name, Mobile_no
+
+Treatment: Treatment_name, Cost
+
+Test: Test_no, Test_id, Test Name, Description
+
+Illness: Illness Name
 ...
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
+Consults (Patient–Doctor): Many-to-Many, Partial Participation
+
+Undergoes (Patient–Treatment): Many-to-Many, Partial Participation
+
+Performs (Doctor–Treatment): Many-to-Many, Partial Participation
+
+Prescribes (Doctor–Test): One-to-Many, Partial Participation
+
+Diagnosed_with (Patient–Illness): Many-to-Many, Partial Participation
 ...
 
 ## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
+Billing can be added as a separate entity linked to Patient and Treatment/Test, including attributes like Bill_ID, Amount, Payment Status.
+
+Prerequisite may not apply directly but can be modeled if treatments/tests depend on other tests.
 
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
+Separated entities based on hospital domain concepts: Patient, Doctor, Treatment, Test, Illness for clarity.
 
+Many-to-many relationships capture complex real-world interactions, like patients consulting multiple doctors or undergoing multiple treatments.
+
+Test entity includes detailed attributes for better diagnostic information.
+
+Illness entity helps in categorizing and recording patient diagnoses.
 ## RESULT
+The ER model for Hospital Management effectively captures core entities, their attributes, and the complex relationships among patients, doctors, treatments, tests, and illnesses. This design reflects realistic hospital operations and provides a solid foundation for database implementation and management.
+
+
