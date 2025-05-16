@@ -51,22 +51,33 @@ Design a database for patient management, appointments, medical records, and bil
 University / Hospital (choose one)
 
 ## ER Diagram:
-![ER Diagram](er_diagram.png)
+
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+Student: Reg no, Student name, Department
+Faculty: Faculty Id, Faculty name, Dept
+Course: Course code, Course name, Department
+ERP: Faculty name, Course details, Slots
+Login: Login user, User_id, Password
 ...
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
+Enroll (Student–Course): Many-to-Many, Partial Participation
+Teaches (Faculty–Student): Many-to-Many, Partial Participation
+Assign (Course–ERP): One-to-Many, Total Participation from Course
+Has (Login–ERP): One-to-One, Total Participation
+
+
 ...
 
 ## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
+-Prerequisite can be modeled using a recursive relationship on the Course entity.
+Billing can be introduced as a separate entity linked with Student and Course via a PaysFor relationship, with attributes like Amount and Payment Status.
 
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
-
+Separate entities were used for better clarity and modularity.
+The ERP entity was introduced as a central system managing course, faculty, and scheduling data.
+Relationships reflect real-world academic interactions (e.g., enrollment, teaching).
+Login entity ensures user-specific access control to ERP.
 ## RESULT
+The concepts of Entity-Relationship (ER) modeling were understood and successfully applied by creating an ER diagram for a real-world application. The diagram effectively represents entities such as Student, Faculty, Course, ERP, and Login, along with their attributes and relationships. This ER model demonstrates the structure and interactions within an academic ERP system.
