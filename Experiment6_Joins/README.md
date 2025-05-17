@@ -211,6 +211,7 @@ WHERE o.purch_amt<100;
 
 **Output:**
 ---
+![Screenshot (106)](https://github.com/user-attachments/assets/3605dcd0-be68-4d8e-9cee-c9c8281a34de)
 
 
 ## RESULT
