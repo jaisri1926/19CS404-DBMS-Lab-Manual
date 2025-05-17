@@ -283,6 +283,8 @@ EventDate DATE
 
 ![image](https://github.com/user-attachments/assets/6e42dfc9-b494-497f-a9fc-73afa502bf53)
 
+## SEB GRADE
+![Screenshot (108)](https://github.com/user-attachments/assets/45e2e86b-2e5b-411d-985b-0d350055c65c)
 
 
 ## RESULT
