@@ -195,6 +195,8 @@ WHERE commission BETWEEN 0.12 AND 0.14;
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/ea0e58f6-0c26-447f-8c26-ed1121d67303)
+## SEB GRADE
+![Screenshot (109)](https://github.com/user-attachments/assets/85846e62-7ac3-494d-99d4-fc0ea7214c46)
 
 
 ## RESULT
