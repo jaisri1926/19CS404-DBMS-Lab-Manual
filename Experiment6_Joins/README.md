@@ -213,6 +213,8 @@ WHERE o.purch_amt<100;
 ---
 ![Screenshot (106)](https://github.com/user-attachments/assets/3605dcd0-be68-4d8e-9cee-c9c8281a34de)
 
+## SEB GRADE
+![Screenshot (111)](https://github.com/user-attachments/assets/706bd847-d352-4cb7-8feb-d0e71fccac9f)
 
 ## RESULT
 Thus, the SQL queries to implement different types of joins have been executed successfully.
